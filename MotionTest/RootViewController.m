@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "AccelerometerView.h"
+#import "CoreMotionView.h"
 
 @implementation RootViewController
 
@@ -55,7 +56,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 2;
 }
 
 // Customize the appearance of table view cells.
@@ -69,7 +70,17 @@
     }
 
     // Configure the cell.
-    cell.text = @"Accelerometer";
+    switch ([indexPath row]) {
+        case 0:
+                cell.text = @"Accelerometer";
+            break;
+            
+        case 1:
+                cell.text = @"Core Motion";
+        default:
+            break;
+    }
+
     
     
     return cell;
@@ -118,13 +129,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController *detailViewController = nil;
     
-    AccelerometerView *detailViewController = [[AccelerometerView alloc] initWithNibName:@"AccelerometerView" bundle:nil];
+    switch ([indexPath row]) {
+        case 0:
+            detailViewController = [[AccelerometerView alloc] initWithNibName:@"AccelerometerView" bundle:nil];
+            break;
+            
+        case 1:
+            detailViewController = [[CoreMotionView alloc] initWithNibName:@"CoreMotionView" bundle:nil];
+
+        default:
+            break;
+    }
+
     // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
-	
+    
 }
 
 - (void)didReceiveMemoryWarning

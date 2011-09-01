@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1CCE4113D9EA9300EA0200 /* CoreMotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CCE3F13D9EA9300EA0200 /* CoreMotionView.m */; };
+		6A1CCE4213D9EA9300EA0200 /* CoreMotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1CCE4013D9EA9300EA0200 /* CoreMotionView.xib */; };
+		6A1CCE4513D9EEDD00EA0200 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1CCE4413D9EEDD00EA0200 /* CoreMotion.framework */; };
 		6AF6A3A113D87FA500BAB1BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6A3A013D87FA500BAB1BE /* UIKit.framework */; };
 		6AF6A3A313D87FA500BAB1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6A3A213D87FA500BAB1BE /* Foundation.framework */; };
 		6AF6A3A513D87FA500BAB1BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6A3A413D87FA500BAB1BE /* CoreGraphics.framework */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A1CCE3E13D9EA9300EA0200 /* CoreMotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreMotionView.h; sourceTree = "<group>"; };
+		6A1CCE3F13D9EA9300EA0200 /* CoreMotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreMotionView.m; sourceTree = "<group>"; };
+		6A1CCE4013D9EA9300EA0200 /* CoreMotionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreMotionView.xib; sourceTree = "<group>"; };
+		6A1CCE4413D9EEDD00EA0200 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		6AF6A39C13D87FA500BAB1BE /* MotionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF6A3A013D87FA500BAB1BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AF6A3A213D87FA500BAB1BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1CCE4513D9EEDD00EA0200 /* CoreMotion.framework in Frameworks */,
 				6AF6A3E213D8930D00BAB1BE /* AudioToolbox.framework in Frameworks */,
 				6AF6A3A113D87FA500BAB1BE /* UIKit.framework in Frameworks */,
 				6AF6A3A313D87FA500BAB1BE /* Foundation.framework in Frameworks */,
@@ -96,6 +104,7 @@
 		6AF6A39113D87FA500BAB1BE = {
 			isa = PBXGroup;
 			children = (
+				6A1CCE4413D9EEDD00EA0200 /* CoreMotion.framework */,
 				6AF6A3A613D87FA500BAB1BE /* MotionTest */,
 				6AF6A3C813D87FA600BAB1BE /* MotionTestTests */,
 				6AF6A39F13D87FA500BAB1BE /* Frameworks */,
@@ -136,6 +145,9 @@
 				6AF6A3B513D87FA500BAB1BE /* RootViewController.h */,
 				6AF6A3B613D87FA500BAB1BE /* RootViewController.m */,
 				6AF6A3B813D87FA500BAB1BE /* RootViewController.xib */,
+				6A1CCE3E13D9EA9300EA0200 /* CoreMotionView.h */,
+				6A1CCE3F13D9EA9300EA0200 /* CoreMotionView.m */,
+				6A1CCE4013D9EA9300EA0200 /* CoreMotionView.xib */,
 				6AF6A3A713D87FA500BAB1BE /* Supporting Files */,
 			);
 			path = MotionTest;
@@ -247,6 +259,7 @@
 				6AF6A3BA13D87FA500BAB1BE /* RootViewController.xib in Resources */,
 				6AF6A3E013D8837700BAB1BE /* AccelerometerView.xib in Resources */,
 				6AF6A3E413D893D400BAB1BE /* tap.aif in Resources */,
+				6A1CCE4213D9EA9300EA0200 /* CoreMotionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +299,7 @@
 				6AF6A3B113D87FA500BAB1BE /* MotionTestAppDelegate.m in Sources */,
 				6AF6A3B713D87FA500BAB1BE /* RootViewController.m in Sources */,
 				6AF6A3DF13D8837700BAB1BE /* AccelerometerView.m in Sources */,
+				6A1CCE4113D9EA9300EA0200 /* CoreMotionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +475,7 @@
 				6AF6A3D613D87FA600BAB1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AF6A3D713D87FA600BAB1BE /* Build configuration list for PBXNativeTarget "MotionTestTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				6AF6A3D913D87FA600BAB1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
